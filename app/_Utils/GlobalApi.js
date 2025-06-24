@@ -16,44 +16,55 @@ const GetCategory = async () => {
       }
     }
   `;
-
   // Fallback categories for development/testing
   const fallbackCategories = [
     {
       id: '1',
       name: 'Burger',
       slug: 'burger',
-      icon: { url: '🍔' }
+      icon: { url: '/api/placeholder/50/50' }
     },
     {
       id: '2',
       name: 'Pizza',
       slug: 'pizza',
-      icon: { url: '🍕' }
+      icon: { url: '/api/placeholder/50/50' }
     },
     {
       id: '3',
-      name: 'Ramen',
-      slug: 'ramen',
-      icon: { url: '🍜' }
+      name: 'Dosa',
+      slug: 'dosa',
+      icon: { url: '/api/placeholder/50/50' }
     },
     {
       id: '4',
-      name: 'Sushi',
-      slug: 'sushi',
-      icon: { url: '🍣' }
+      name: 'Ramen',
+      slug: 'ramen',
+      icon: { url: '/api/placeholder/50/50' }
     },
     {
       id: '5',
-      name: 'Chinese',
-      slug: 'chinese',
-      icon: { url: '🥡' }
+      name: 'Sushi',
+      slug: 'sushi',
+      icon: { url: '/api/placeholder/50/50' }
     },
     {
       id: '6',
+      name: 'Chinese',
+      slug: 'chinese',
+      icon: { url: '/api/placeholder/50/50' }
+    },
+    {
+      id: '7',
       name: 'Mexican',
       slug: 'mexican',
-      icon: { url: '🌮' }
+      icon: { url: '/api/placeholder/50/50' }
+    },
+    {
+      id: '8',
+      name: 'Indian',
+      slug: 'indian',
+      icon: { url: '/api/placeholder/50/50' }
     }
   ];
 
