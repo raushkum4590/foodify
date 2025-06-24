@@ -150,32 +150,24 @@ const CategoryList = ({ onCategorySelect, selectedCategory }) => {
                     : 'bg-white hover:bg-orange-50 text-gray-800 hover:scale-105'
                 } rounded-2xl p-4 shadow-md hover:shadow-xl`}
               >
-                <div className="text-center">
-                  {/* Category Icon */}
+                <div className="text-center">                  {/* Category Icon */}
                   <div className={`w-16 h-16 mx-auto mb-3 rounded-full flex items-center justify-center overflow-hidden ${
                     selectedCategory === category.slug 
                       ? 'bg-white/20' 
                       : 'bg-gradient-to-br from-orange-100 to-orange-200'
                   }`}>
-                    {category.icon ? (
-                      <img
-                        src={category.icon.url}
-                        alt={category.name}
-                        className={`w-10 h-10 object-contain ${
-                          selectedCategory === category.slug ? 'filter brightness-0 invert' : ''
-                        }`}
-                      />
-                    ) : (
-                      <div className={`w-12 h-12 rounded-full flex items-center justify-center ${
-                        selectedCategory === category.slug 
-                          ? 'bg-white/20 text-white' 
-                          : 'bg-orange-200 text-orange-600'
-                      }`}>
-                        <span className="text-xl font-bold">
-                          {category.name.charAt(0)}
-                        </span>
-                      </div>
-                    )}
+                    {/* Use emoji based on category name, not URL */}
+                    <div className="text-3xl">
+                      {category.name === 'Burger' ? '🍔' :
+                       category.name === 'Pizza' ? '🍕' :
+                       category.name === 'Dosa' ? '🥞' :
+                       category.name === 'Ramen' ? '🍜' :
+                       category.name === 'Sushi' ? '🍣' :
+                       category.name === 'Chinese' ? '🥡' :
+                       category.name === 'Mexican' ? '🌮' :
+                       category.name === 'Indian' ? '🍛' :
+                       '🍽️'}
+                    </div>
                   </div>
                   
                   {/* Category Name */}

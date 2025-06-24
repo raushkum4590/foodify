@@ -142,20 +142,20 @@ export default function CategoriesPage() {
                 onClick={() => handleCategoryClick(category.slug)}
                 className="group cursor-pointer transform hover:scale-105 transition-all duration-300"
               >
-                <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-200 hover:border-orange-300 hover:shadow-xl transition-all duration-300 text-center">
-                  {/* Category Icon */}
+                <div className="bg-gradient-to-br from-white to-gray-50 rounded-2xl p-6 border border-gray-200 hover:border-orange-300 hover:shadow-xl transition-all duration-300 text-center">                  {/* Category Icon */}
                   <div className="mb-4 group-hover:scale-110 transition-transform duration-300">
-                    {category.icon?.url ? (
-                      <img
-                        src={category.icon.url}
-                        alt={category.name}
-                        className="w-16 h-16 mx-auto object-contain"
-                      />
-                    ) : (
-                      <div className="w-16 h-16 mx-auto bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center text-white text-2xl font-bold">
-                        {category.name.charAt(0)}
-                      </div>
-                    )}
+                    {/* Use emoji based on category name */}
+                    <div className="w-16 h-16 mx-auto bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center text-white text-3xl">
+                      {category.name === 'Burger' ? '🍔' :
+                       category.name === 'Pizza' ? '🍕' :
+                       category.name === 'Dosa' ? '🥞' :
+                       category.name === 'Ramen' ? '🍜' :
+                       category.name === 'Sushi' ? '🍣' :
+                       category.name === 'Chinese' ? '🥡' :
+                       category.name === 'Mexican' ? '🌮' :
+                       category.name === 'Indian' ? '🍛' :
+                       '🍽️'}
+                    </div>
                   </div>
                   
                   {/* Category Name */}
