@@ -23,18 +23,17 @@ const HomePage = () => {
       <Header cartItems={cartItems} setCart={setCartItems} />
       
       <div className="product-list">
-        {/* Example buttons to add items */}
-        <button
+        {/* Example buttons to add items */}        <button
           onClick={() => addItemToCart({ id: 1, name: 'Item 1', price: 10 })}
           className="px-4 py-2 bg-blue-500 text-white rounded-lg"
         >
-          Add Item 1 to Cart ($10)
+          Add Item 1 to Cart (₹800)
         </button>
         <button
           onClick={() => addItemToCart({ id: 2, name: 'Item 2', price: 20 })}
           className="px-4 py-2 bg-blue-500 text-white rounded-lg"
         >
-          Add Item 2 to Cart ($20)
+          Add Item 2 to Cart (₹1600)
         </button>
       </div>
     </div>

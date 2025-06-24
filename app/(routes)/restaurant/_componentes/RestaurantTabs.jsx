@@ -2,7 +2,7 @@ import React from 'react'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 
 
-const RestroTabs  = () => {
+const RestaurantTabs = () => {
   return (
     <div>
         <Tabs defaultValue="account" className="w-[400px]">
@@ -16,4 +16,4 @@ const RestroTabs  = () => {
   )
 }
 
-export default RestroTabs 
+export default RestaurantTabs;

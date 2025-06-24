@@ -26,7 +26,7 @@ const RestaurantsList = ({ searchResults = null, selectedCategory = null }) => {
   const getRestaurantsList = async () => {
     setLoading(true);
     try {
-      const resp = await GlobalApi.GetResturents();
+      const resp = await GlobalApi.GetRestaurants();
       console.log('All restaurants with their categories:');
       resp.forEach(restaurant => {
         console.log(`- ${restaurant.name}: category = ${restaurant.category?.name || 'No category'} (slug: ${restaurant.category?.slug || 'No slug'})`);
@@ -58,7 +58,7 @@ const RestaurantsList = ({ searchResults = null, selectedCategory = null }) => {
   };
 
   const navigateToRestaurant = (slug) => {
-    router.push(`/resturent/${slug}`);
+    router.push(`/restaurant/${slug}`);
   };
 
   const generateStarRating = (rating = 4.2) => {

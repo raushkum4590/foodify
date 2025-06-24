@@ -5,7 +5,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 console.log({ Tabs, TabsContent, TabsList, TabsTrigger }); // Check the output
 
-const RestroTabs = () => {
+const RestaurantTabs = () => {
   return (
     <div>
       <Tabs defaultValue="Category" className="w-full mt-10">
@@ -23,4 +23,4 @@ const RestroTabs = () => {
   );
 };
 
-export default RestroTabs;
+export default RestaurantTabs;
